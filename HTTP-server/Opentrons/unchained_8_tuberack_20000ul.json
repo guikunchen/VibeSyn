@@ -1,0 +1,150 @@
+{
+    "ordering": [
+        [
+            "A1",
+            "B1"
+        ],
+        [
+            "A2",
+            "B2"
+        ],
+        [
+            "A3",
+            "B3"
+        ],
+        [
+            "A4",
+            "B4"
+        ]
+    ],
+    "brand": {
+        "brand": "unchained",
+        "brandId": [
+            "2x4"
+        ]
+    },
+    "metadata": {
+        "displayName": "unchained 8 Tube Rack with standard 20 mL",
+        "displayCategory": "tubeRack",
+        "displayVolumeUnits": "µL",
+        "tags": []
+    },
+    "dimensions": {
+        "xDimension": 127.8,
+        "yDimension": 85.5,
+        "zDimension": 61.2
+    },
+    "wells": {
+        "A1": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 19,
+            "y": 57.8,
+            "z": 6.4
+        },
+        "B1": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 19,
+            "y": 27.8,
+            "z": 6.4
+        },
+        "A2": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 49,
+            "y": 57.8,
+            "z": 6.4
+        },
+        "B2": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 49,
+            "y": 27.8,
+            "z": 6.4
+        },
+        "A3": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 79,
+            "y": 57.8,
+            "z": 6.4
+        },
+        "B3": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 79,
+            "y": 27.8,
+            "z": 6.4
+        },
+        "A4": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 109,
+            "y": 57.8,
+            "z": 6.4
+        },
+        "B4": {
+            "depth": 54.8,
+            "totalLiquidVolume": 20000,
+            "shape": "circular",
+            "diameter": 16.6,
+            "x": 109,
+            "y": 27.8,
+            "z": 6.4
+        }
+    },
+    "groups": [
+        {
+            "brand": {
+                "brand": "standard",
+                "brandId": [
+                    "20ml"
+                ]
+            },
+            "metadata": {
+                "wellBottomShape": "flat",
+                "displayCategory": "tubeRack"
+            },
+            "wells": [
+                "A1",
+                "B1",
+                "A2",
+                "B2",
+                "A3",
+                "B3",
+                "A4",
+                "B4"
+            ]
+        }
+    ],
+    "parameters": {
+        "format": "irregular",
+        "quirks": [],
+        "isTiprack": false,
+        "isMagneticModuleCompatible": false,
+        "loadName": "unchained_8_tuberack_20000ul"
+    },
+    "namespace": "custom_beta",
+    "version": 1,
+    "schemaVersion": 2,
+    "cornerOffsetFromSlot": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    }
+}

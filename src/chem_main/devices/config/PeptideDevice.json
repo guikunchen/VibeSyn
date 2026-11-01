@@ -1,0 +1,10 @@
+{
+  "connection_settings": {
+    "http_url": "http://10.97.60.173:8001",
+    "mongodb_address": "",
+    "mongodb_database": "chenjie",
+    "mongodb_collection": "PeptideDevice",
+    "http_status": null,
+    "mongodb_status": null
+  }
+}

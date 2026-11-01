@@ -1,0 +1,14 @@
+[
+    {
+      "file_name": "bond_energies.pdf",
+      "role": "compact_d298_bond_table",
+      "description": "Short bond-label lookup table for direct D°298/kJ mol-1 bond entries.",
+      "aliases": ["bond energies", "d298 table"]
+    },
+    {
+      "file_name": "Handbook_of_Bond_Dissociation_Energies.pdf",
+      "role": "comprehensive_handbook",
+      "description": "Comprehensive handbook for compound-specific and broader bond dissociation data.",
+      "aliases": ["handbook", "comprehensive"]
+    }
+]

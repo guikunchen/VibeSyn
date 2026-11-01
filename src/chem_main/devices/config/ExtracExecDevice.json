@@ -1,0 +1,22 @@
+{
+  "connection_settings": {
+    "http_url": "http://10.97.62.119:8001",
+    "mongodb_address": "",
+    "mongodb_database": "chenjie",
+    "mongodb_collection": "ExtractionExecution",
+    "http_status": null,
+    "mongodb_status": null
+  },
+  "reagent_settings": {
+    "1": "",
+    "2": "DCM",
+    "3": "H2O",
+    "4": "brine",
+    "5": "10% HCl",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": ""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "connection_settings": {
+    "http_url": "http://10.97.39.81:8001",
+    "mongodb_address": "",
+    "mongodb_database": "chenjie",
+    "mongodb_collection": "SeparationExecution",
+    "http_status": null,
+    "mongodb_status": null
+  },
+  "reagent_settings": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10": ""
+  }
+}

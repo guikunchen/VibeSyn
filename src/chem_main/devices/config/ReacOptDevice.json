@@ -1,0 +1,27 @@
+{
+  "connection_settings": {
+    "http_url": "http://10.97.39.104:8004",
+    "mongodb_address": "",
+    "mongodb_database": "chenjie",
+    "mongodb_collection": "ReactionOptimization",
+    "http_status": null,
+    "mongodb_status": null
+  },
+  "reagent_settings": {
+    "6": "THF",
+    "7": "NMP",
+    "8": "MeCN",
+    "9": "",
+    "10": "",
+    "#1": "Fmoc-pyrrolidine THF solution (2 mol/L)",
+    "#2": "DMAP THF solution (2 mol/L)",
+    "#3": "DIPEA THF solution (2 mol/L)",
+    "#4": "4-nitrophenyl carbonochloridate THF solution (2 mol/L)",
+    "#5": "tert-butyl N-(2-aminoethyl)carbamate THF solution (2.5 mol/L)",
+    "#6": "H2O",
+    "#7": "2,6-lutidine THF solution (2 mol/L)",
+    "#8": "",
+    "#9": "",
+    "#10": ""
+  }
+}

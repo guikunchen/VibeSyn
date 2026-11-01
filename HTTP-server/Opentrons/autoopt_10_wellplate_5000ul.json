@@ -1,0 +1,165 @@
+{
+    "ordering": [
+        [
+            "A1",
+            "B1"
+        ],
+        [
+            "A2",
+            "B2"
+        ],
+        [
+            "A3",
+            "B3"
+        ],
+        [
+            "A4",
+            "B4"
+        ],
+        [
+            "A5",
+            "B5"
+        ]
+    ],
+    "brand": {
+        "brand": "AutoOpt",
+        "brandId": []
+    },
+    "metadata": {
+        "displayName": "AutoOpt 10 Well Plate 5000 µL",
+        "displayCategory": "wellPlate",
+        "displayVolumeUnits": "µL",
+        "tags": []
+    },
+    "dimensions": {
+        "xDimension": 128,
+        "yDimension": 85.2,
+        "zDimension": 70
+    },
+    "wells": {
+        "A1": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 14,
+            "y": 60.1,
+            "z": 20
+        },
+        "B1": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 14,
+            "y": 25.1,
+            "z": 20
+        },
+        "A2": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 39,
+            "y": 60.1,
+            "z": 20
+        },
+        "B2": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 39,
+            "y": 25.1,
+            "z": 20
+        },
+        "A3": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 64,
+            "y": 60.1,
+            "z": 20
+        },
+        "B3": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 64,
+            "y": 25.1,
+            "z": 20
+        },
+        "A4": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 89,
+            "y": 60.1,
+            "z": 20
+        },
+        "B4": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 89,
+            "y": 25.1,
+            "z": 20
+        },
+        "A5": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 114,
+            "y": 60.1,
+            "z": 20
+        },
+        "B5": {
+            "depth": 50,
+            "totalLiquidVolume": 5000,
+            "shape": "circular",
+            "diameter": 8,
+            "x": 114,
+            "y": 25.1,
+            "z": 20
+        }
+    },
+    "groups": [
+        {
+            "metadata": {
+                "wellBottomShape": "flat"
+            },
+            "wells": [
+                "A1",
+                "B1",
+                "A2",
+                "B2",
+                "A3",
+                "B3",
+                "A4",
+                "B4",
+                "A5",
+                "B5"
+            ]
+        }
+    ],
+    "parameters": {
+        "format": "irregular",
+        "quirks": [],
+        "isTiprack": false,
+        "isMagneticModuleCompatible": false,
+        "loadName": "autoopt_10_wellplate_5000ul"
+    },
+    "namespace": "custom_beta",
+    "version": 1,
+    "schemaVersion": 2,
+    "cornerOffsetFromSlot": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    }
+}

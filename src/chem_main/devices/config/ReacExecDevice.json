@@ -1,0 +1,32 @@
+{
+  "connection_settings": {
+    "http_url": "http://10.97.62.119:8001",
+    "mongodb_address": "",
+    "mongodb_database": "chenjie",
+    "mongodb_collection": "ReactionExecution",
+    "http_status": null,
+    "mongodb_status": null
+  },
+  "reagent_settings": {
+    "1": " ",
+    "2": "DCM",
+    "3": "1,4-dioxane",
+    "4": "THF",
+    "5": "saturated NaHCO3",
+    "6": "H2O",
+    "7": "EtOH",
+    "8": "",
+    "9": "",
+    "10": "",
+    "#1": "crude amide A solution",
+    "#2": "pyridine solution",
+    "#3": "",
+    "#4": "",
+    "#5": "phenylsilane solution",
+    "#6": "",
+    "#7": "",
+    "#8": "",
+    "#9": "",
+    "#10": ""
+  }
+}

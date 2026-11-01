@@ -1,0 +1,15 @@
+httpx
+langchain-classic
+langchain-community
+langchain-core
+langchain-openai
+llama-index-core
+llama-index-embeddings-openai
+llama-index-llms-openai
+ollama
+openai
+pillow
+pydantic
+PyMuPDF
+requests
+zhipuai
