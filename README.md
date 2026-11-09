@@ -13,7 +13,7 @@ This guide explains how to run the prebuilt VibeSyn website on a Linux server us
 
 Download the image from Google Drive and save it as `vibesyn.tar.gz`:
 
-**Download link:** [GoogleDrive](https://drive.google.com/file/d/156O94L2LchiBadAfv9ga89MEU5oozGOw/view?usp=sharing)
+**Download link:** [GoogleDrive](https://drive.google.com/file/d/1WuddL-EKYbnSbwWCRXrba8t1x4AXGLv9/view?usp=sharing)
 
 Transfer the downloaded file to the server, for example:
 
