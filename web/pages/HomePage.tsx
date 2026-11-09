@@ -45,7 +45,7 @@ export default function HomePage() {
       <section className="hero">
         <div>
           <span className="eyebrow">Chemical agent workspace</span>
-          <h1>Welcome to ChemAgentSys</h1>
+          <h1>Welcome to VibeSyn</h1>
           <p>
             Configure autonomous chemistry agents, coordinate experiments, and follow every
             tool and hardware handoff from one focused workspace.

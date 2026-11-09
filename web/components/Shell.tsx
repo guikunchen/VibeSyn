@@ -37,9 +37,9 @@ export default function Shell({ children }: { children: ReactNode }) {
       {open && <button className="nav-scrim" aria-label="Close navigation" onClick={() => setOpen(false)} />}
       <aside className={`sidebar ${open ? "is-open" : ""}`}>
         <div className="brand">
-          <img src="/assets/home.png" alt="ChemAgentSys" />
+          <img src="/assets/home.png" alt="VibeSyn" />
           <div>
-            <strong>ChemAgentSys</strong>
+            <strong>VibeSyn</strong>
             <span>Zhejiang University</span>
           </div>
           <button

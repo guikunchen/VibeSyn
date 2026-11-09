@@ -1,6 +1,6 @@
-# ChemAgentSys Docker Deployment
+# VibeSyn Docker Deployment
 
-This guide explains how to run the prebuilt ChemAgentSys website on a Linux server using Docker.
+This guide explains how to run the prebuilt VibeSyn website on a Linux server using Docker.
 
 ## Requirements
 
@@ -11,14 +11,14 @@ This guide explains how to run the prebuilt ChemAgentSys website on a Linux serv
 
 ## 1. Download the image
 
-Download `chem-agent-website.tar.gz` from GoogleDrive:
+Download the image from Google Drive and save it as `vibesyn.tar.gz`:
 
-**Download link:** [GoogleDrive](https://drive.google.com/file/d/1LBFoSS0Gli-Ag3MmbMVsTuS0E8XBTmgw/view?usp=sharing)
+**Download link:** [GoogleDrive](https://drive.google.com/file/d/156O94L2LchiBadAfv9ga89MEU5oozGOw/view?usp=sharing)
 
 Transfer the downloaded file to the server, for example:
 
 ```bash
-scp chem-agent-website.tar.gz USER@SERVER:~/
+scp vibesyn.tar.gz USER@SERVER:~/
 ```
 
 Replace `USER@SERVER` with your SSH username and server address. The remaining commands run on the server after you connect with SSH. If your account requires `sudo` to access Docker, prefix each `docker` command below with `sudo`.
@@ -28,49 +28,52 @@ Replace `USER@SERVER` with your SSH username and server address. The remaining c
 Run these commands in the directory containing the image archive:
 
 ```bash
-docker load -i chem-agent-website.tar.gz
-
-docker run -d \
-  --name chem-agent-website \
-  --restart unless-stopped \
-  -p 127.0.0.1:9000:9000 \
-  chem-agent-website:latest
+docker load -i vibesyn.tar.gz
 ```
 
-The website listens on the server's loopback interface, so it is not exposed directly to the network. If port `9000` is already in use on the server, change the first `9000` in the port mapping to an available port, for example `127.0.0.1:9001:9000`. Use that server port in the SSH tunnel command below.
+Then start the container:
+
+```bash
+docker run -d \
+  --name vibesyn \
+  --restart unless-stopped \
+  -p SERVER_LAN_IP:9000:9000 \
+  vibesyn:latest
+```
+
+Replace `SERVER_LAN_IP` with the server's actual private IP address. Binding to that address makes the website accessible on that network without binding it to every interface. If port `9000` is already in use, change the host port (the first `9000`) to an available port, for example `SERVER_LAN_IP:9001:9000`. Ensure the server firewall permits access from the intended network.
 
 Check that the container is running:
 
 ```bash
-docker ps --filter name=chem-agent-website
-curl -f http://127.0.0.1:9000/
+docker ps --filter name=vibesyn
+curl -f http://SERVER_LAN_IP:9000/
 ```
 
 The second command should return HTML. If you chose a different server port, substitute it for `9000`.
 
 ## 3. Open the website
 
-On your own computer, open a **separate terminal** and create an SSH tunnel:
+From a computer on the same network, open `http://SERVER_LAN_IP:9000` in a browser, replacing `SERVER_LAN_IP` with the address used above. If you chose a different host port, use that port in the URL.
+
+### Alternative: SSH tunnel
+
+If you can reach the server by SSH but cannot connect to its website port directly, run this on your computer:
 
 ```bash
-ssh -N -L 9000:127.0.0.1:9000 USER@SERVER
+ssh -N -L 9000:SERVER_LAN_IP:9000 USER@SERVER
 ```
 
-Keep that terminal open, then visit [http://localhost:9000](http://localhost:9000) in your browser. Press `Ctrl+C` in the tunnel terminal when you are finished.
-
-In the tunnel command, the first `9000` is the port on your computer and the last `9000` is the server port. If either port is already in use, adjust it accordingly. For example, if the server port is `9001` and your computer's port `9000` is unavailable, use `ssh -N -L 19000:127.0.0.1:9001 USER@SERVER`, then visit `http://localhost:19000`.
+Replace `SERVER_LAN_IP` with the server address used in the Docker port mapping, and `USER@SERVER` with the SSH destination. Keep the terminal open and visit [http://localhost:9000](http://localhost:9000). Press `Ctrl+C` to close the tunnel. If you chose a different server port, change the last `9000`; if your computer's port `9000` is in use, change the first `9000` and use that port in the browser.
 
 ## Manage the container
 
 ```bash
-# Show logs
-docker logs --tail 100 chem-agent-website
-
 # Stop the website
-docker stop chem-agent-website
+docker stop vibesyn
 
 # Start it again
-docker start chem-agent-website
+docker start vibesyn
 ```
 
 ## What is included

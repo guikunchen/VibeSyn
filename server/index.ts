@@ -311,4 +311,4 @@ const server = Bun.serve({
   },
 });
 
-console.log(`ChemAgentSys is running at ${server.url}`);
+console.log(`VibeSyn is running at ${server.url}`);
